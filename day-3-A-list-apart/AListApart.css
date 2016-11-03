@@ -5,8 +5,10 @@ body{
 }
 h1 {
   font-family: impact, sans-serif;
-  font-size: 12em;
-  margin: 5px;
+  font-size: 16em;
+  text-align: center;
+  padding: 2px;
+  margin: 15px;
 }
 h2{font-family: arial, sans-serif;
   font-size: 2em;
