@@ -1,0 +1,106 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+  font-family: "Avenir" sans-serif;
+  line-height: 1;
+
+}
+ol, ul li{
+	list-style: square;
+  color: rgba(206, 207, 213, 1.0);
+  text-decoration: underline;
+	line-height: 42px;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+span {
+  color: rgba(0, 135, 204, 1.0);
+}
+span ul {
+
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+.container{
+  border: 2px solid rgba(206, 207, 213, 1.0);
+  border-radius: 25px;
+  position: relative;
+  text-align: left;
+  max-width: 450px;
+  margin: 120px auto 120px auto;
+  padding: 60px;
+
+}
+.lesson{
+  color: rgba(45, 179, 74, 1.0);
+  font-family: "Avenir";
+	font-weight: bold;
+  font-size: 2.5em;
+  margin:0 auto 0 auto;
+  padding: 30px 30px 50px 10px;
+}
+.list {
+  color: grey;
+  font-family: "Avenir";
+  font-size: 2em;
+  margin:0 auto 0 auto;
+  padding: 30px 30px 30px 50px;
+  line-height: 1.5em;
+}
+.list a{
+color: rgba(0, 135, 204, 1.0);
+}
+
+.properties{
+  color: rgba(151, 153, 167, 1.0);
+  font-family: "Avenir";
+	font-weight: bold;
+  font-size: 2em;
+  margin:0 auto 0 auto;
+  padding: 15px;
+}
+#thetwo{
+	font-family: "Avenir";
+	color: white;
+  position:absolute;
+  text-align: center;
+  background-color: rgba(206, 207, 213, 1.0);
+  height: 40px;
+  width: 40px;
+  right: -40px;
+  top: 60px;
+  padding:50px;
+  font-size: 3em;
+  border-radius: 50%;
+}
