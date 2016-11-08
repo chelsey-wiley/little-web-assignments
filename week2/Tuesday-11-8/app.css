@@ -31,8 +31,7 @@ body {
 ol, ul li{
 	list-style: square;
   color: rgba(206, 207, 213, 1.0);
-  text-decoration: underline;
-	line-height: 42px;
+	line-height: 52px;
 }
 blockquote, q {
 	quotes: none;
@@ -44,9 +43,7 @@ q:before, q:after {
 }
 span {
   color: rgba(0, 135, 204, 1.0);
-}
-span ul {
-
+	border-bottom: 2px solid rgba(206, 207, 213, 1.0);
 }
 table {
 	border-collapse: collapse;
@@ -75,7 +72,7 @@ table {
   font-family: "Avenir";
   font-size: 2em;
   margin:0 auto 0 auto;
-  padding: 30px 30px 30px 50px;
+  padding: 30px 30px 40px 50px;
   line-height: 1.5em;
 }
 .list a{
