@@ -115,12 +115,13 @@ width: 60px;
 	overflow: auto;
 }
 
+
 .container img{
 	outline: solid 3px red;
 	width: 50%;
 	text-align: center;
 	float: left;
-	max-width: 100%;
+	max-width: 50%;
 }
 
 .text{
