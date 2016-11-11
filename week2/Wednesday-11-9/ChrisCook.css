@@ -53,6 +53,7 @@ table {
 }
 
 
+
 .nav{
 	background-color: black;
 	color:white;
@@ -109,24 +110,79 @@ width: 60px;
 
 
 .container {
-	background-color: pink;
+	outline: solid 5px orange;
 	margin:0 auto;
-  width: 100%;
+  max-width: 100%;
 	overflow: auto;
+	padding: 3% 7%;
+
 }
 
-
-.container img{
+.image {
 	outline: solid 3px red;
-	width: 50%;
+	max-width: 50%;
 	text-align: center;
 	float: left;
-	max-width: 50%;
+	width: 50%;
+}
+
+.image img{
+	outline: solid 1px blue;
+	max-width: 80%;
+	text-align: center;
+	margin: 0 auto 0 auto;
+	overflow: auto;
+
 }
 
 .text{
-	outline: dashed 1px green;
-	width: 50%;
-	float: left;
+	outline: dashed 3px green;
+	max-width: 50%;
 	text-align: center;
+	float: left;
+	width: 50%;
+	margin-top: 10%;
+	line-height: 2em;
+}
+
+.text-full{
+	outline: dashed 3px green;
+	max-width: 70%;
+	text-align: center;
+	float: left;
+	margin-top: 3%;
+	line-height: 2em;
+}
+
+.quote-image{
+	outline: solid 1px blue;
+	width: 15%;
+	text-align: center;
+	margin: 0 auto 0 auto;
+	overflow: auto;
+	float: left;
+}
+
+.quote-image img{
+	max-height: 150px;
+}
+
+.button-l{
+	outline: solid 3px red;
+	max-width: 48%;
+	text-align: right;
+	float: left;
+	width: 50%;
+	padding: 0%, 1%;
+
+}
+
+.button-r{
+	outline: solid 3px Yellow;
+	max-width: 50%;
+	text-align: left;
+	float: left;
+	width: 48%;
+	padding-left: 0%, 1%;
+
 }
