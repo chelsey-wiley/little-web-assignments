@@ -98,8 +98,8 @@ section{
 	background-color: rgba(238, 240, 243, 1.0);
 	padding-top: 10px;
 }
-section ol{
-
+section span {
+	color: rgba(141, 144, 161, 1.0);
 }
 section ol a{
 	text-decoration: none;
