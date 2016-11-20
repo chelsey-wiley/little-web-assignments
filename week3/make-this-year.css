@@ -1,0 +1,319 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+
+
+body {
+	font-family: 'Karla', sans-serif;
+}
+
+header{
+  	background: url(https://crew.co/make-this-year/images/pattern-dark.png);
+  height: 750px;
+  margin: 0 auto;
+  overflow: auto;
+}
+
+.header-text{
+  color: white;
+  margin: 0 auto;
+  max-width: 45%;
+  margin-top: 3%;
+  overflow: auto;
+
+}
+.header-text h1{
+	font-family: 'Martel', serif;
+	color: white;
+  font-size: 2.3em;
+}
+
+.header-text h2{
+	font-family: 'Raleway', sans-serif;
+	font-weight: bold;
+	text-transform: uppercase;
+	background: linear-gradient( rgba(174, 92, 200, 1.0),rgba(109, 140, 181, 1.0));
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+  font-size: 2.3em;
+	padding-top: 2%;
+
+}
+
+
+.intro-box {
+	font-weight: bold;
+  font-size: 2em;
+	line-height: 1.8em;
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+
+.dots{
+	color: rgba(174, 92, 200, 1.0);
+	background: url(https://crew.co/make-this-year/images/dot.png) repeat-x bottom left;
+}
+
+.dots p{
+	line-height: 1.7em;
+}
+
+.header-text p {
+  font-size: 1.5em;
+}
+
+.search-box {
+	padding-top: 5%;
+}
+.search-box p{
+	padding: 1%;
+	color: rgba(178, 178, 180, 1.0);
+  font-size: 1.2em;
+  line-height: 3.5em;
+  border-radius: 10px;
+  background-color: white;
+  width: 64%;
+  float:left;
+
+}
+
+.search-box button{
+	font-family: 'Karla', sans-serif;
+	color: white;
+  font-size: 1.2em;
+  line-height: 3.5em;
+  width: 30%;
+  border-radius: 10px;
+  float:right;
+	background-color: rgba(174, 92, 200, 1.0);
+
+}
+
+.instructors {
+	color: blakc;
+	margin: 0 auto;
+	max-width: 45%;
+	margin-top: 5%;
+	overflow: auto;
+}
+
+.instructors h1 {
+  font-size: 1.5em;
+	margin-bottom: 5%;
+	font-weight: bold;
+
+}
+
+.photos {
+	overflow: auto;
+	margin-bottom: 15%;
+}
+
+.photos img{
+	border-radius: 5px;
+	width: 100%;
+}
+
+.photos h2{
+	font-weight: bold;
+	font-size: 1.2em;
+	line-height: 1.2em;
+	padding-bottom: 5%;
+}
+.photos p{
+	color: rgba(165, 156, 156, 1.0);
+}
+
+.photo-left{
+	float: left;
+	width: 31.33333%;
+
+}
+
+.photo-center{
+	float: left;
+	margin-left: 3%;
+	margin-right: 3%;
+	width: 31.33333%;
+
+}
+
+.photo-right{
+	width: 31.33333%;
+	float: left;
+
+}
+
+section{
+	color: black;
+	margin: 0 auto;
+	max-width: 45%;
+	overflow: auto;
+}
+
+section h1{
+	font-size: 1.5em;
+	margin-bottom: 5%;
+	font-weight: bold;
+}
+
+section p{
+	padding-bottom: 3%;
+	font-size: 1.2em;
+	line-height: 1.5em;
+}
+
+section a:link {
+	color:rgba(153, 153, 153, 1.0);
+
+}
+section a:visited{
+	color: rgba(153, 153, 153, 1.0);
+}
+section a:hover{
+	color:rgba(78, 78, 78, 1.0)
+}
+.signature{
+	color: rgba(153, 153, 153, 1.0);
+	font-size: 1em;
+	padding-top: 1%;
+
+
+}
+
+.logo-box {
+	color:black;
+	margin: 0 auto;
+	max-width: 45%;
+	margin-top: 3%;
+	overflow: auto;
+}
+
+.logo-box p {
+	font-size: 1.4em;;
+	line-height: 1.5em;
+}
+
+.logos {
+	overflow: auto;
+	margin-bottom: 5%;
+}
+
+.logos img{
+	border-radius: 5px;
+	width: 70%;
+	padding: 20%;
+}
+
+.logos p{
+	color: black;
+	clear: both;
+	padding-top: 7%;
+}
+
+.logos span {
+	font-weight: bold;
+}
+
+
+.photos h2{
+	font-size: 1.2em;
+	line-height: 1.2em;
+	padding-bottom: 5%;
+}
+
+.logo-left{
+	padding-top: 3%;
+	float: left;
+	width: 30.33333%;
+
+}
+
+.logo-center{
+	float: left;
+	margin-left: 3%;
+	margin-right: 3%;
+	width: 30.33333%;
+
+}
+
+.logo-right{
+	padding-top: 3%;
+	width: 30.33333%;
+	float: left;
+}
+
+.lower-search p{
+	color: rgba(176, 176, 176, 1.0);
+  font-size: 1.2em;
+  line-height: 3.2em;
+  border-radius: 10px;
+  background-color: rgba(230, 230, 230, 1.0);
+  width: 60%;
+  float:left;
+}
+
+.lower-search button{
+	color: white;
+  font-size: 1.2em;
+  line-height: 3.2em;
+  width: 35%;
+  border-radius: 10px;
+  float:right;
+	background-color: rgba(174, 92, 200, 1.0);
+}
+
+.foot{
+	color: rgba(153, 153, 153, 1.0);
+	margin-top: 35%;
+	font-size: .7em;
+}
+
+.foot span{
+	font-family: 'Martel', serif;
+	font-size: 1.2em;
+	padding: 5px;
+}
