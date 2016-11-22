@@ -129,11 +129,12 @@ header{
   border-radius: 10px;
   float:right;
 	background-color: rgba(174, 92, 200, 1.0);
+	border: none;
 
 }
 
 .instructors {
-	color: blakc;
+	color: black;
 	margin: 0 auto;
 	max-width: 45%;
 	margin-top: 5%;
@@ -149,7 +150,10 @@ header{
 
 .photos {
 	overflow: auto;
+	max-width: 100%;
 	margin-bottom: 15%;
+	float: left;
+	overflow: hidden;
 }
 
 .photos img{
@@ -187,6 +191,7 @@ header{
 
 }
 
+
 section{
 	color: black;
 	margin: 0 auto;
@@ -213,15 +218,15 @@ section a:link {
 section a:visited{
 	color: rgba(153, 153, 153, 1.0);
 }
+
 section a:hover{
 	color:rgba(78, 78, 78, 1.0)
 }
+
 .signature{
 	color: rgba(153, 153, 153, 1.0);
 	font-size: 1em;
 	padding-top: 1%;
-
-
 }
 
 .logo-box {
@@ -229,8 +234,9 @@ section a:hover{
 	margin: 0 auto;
 	max-width: 45%;
 	margin-top: 3%;
-	overflow: auto;
+	overflow: hidden;
 }
+
 
 .logo-box p {
 	font-size: 1.4em;;
@@ -240,6 +246,7 @@ section a:hover{
 .logos {
 	overflow: auto;
 	margin-bottom: 5%;
+	overflow: hidden;
 }
 
 .logos img{
@@ -303,6 +310,7 @@ section a:hover{
   width: 35%;
   border-radius: 10px;
   float:right;
+	border: none;
 	background-color: rgba(174, 92, 200, 1.0);
 }
 
@@ -318,7 +326,56 @@ section a:hover{
 	padding: 5px;
 }
 
+
+
+
+
+
 @media screen and (max-width: 700px) {
   body {
     max-width: 100%;
-  }
+		margin: 0px;
+	}
+	div{
+		margin: 0px;
+		text-align: center;
+	}
+	.header-text {
+		margin: 0 auto;
+		max-width: 100%;
+	}
+	.instructors {
+		margin: 0 auto;
+		max-width: 100%;
+		float: none;
+	}
+	section {
+		max-width: 90%;
+	}
+}
+@media screen and (max-width: 400px) {
+
+
+.photo-left{
+	width: 90%;
+	margin: 0 auto;
+	float: none;
+
+}
+.photo-center{
+	width: 90%;
+	margin: 0 auto;
+	float: none;
+
+}
+.photo-right{
+	width: 90%;
+	margin: 0 auto;
+	float: none;
+}
+
+.logo-box {
+	max-width: 100%;
+	margin: 0px;
+	float: none;
+	}
