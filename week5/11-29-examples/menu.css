@@ -1,0 +1,60 @@
+body{
+  font-family: "Helvetica";
+}
+
+.menu {
+  max-width: 300px;
+  float:left;
+  outline: 1px solid black
+}
+
+.logo img{
+  max-width: 200px;
+  height: 100px;
+  float: left;
+  background-color: lightgrey;
+  padding-right: 100px;
+}
+
+.mail {
+clear:both;
+  border-bottom: 1px solid grey;
+  color: red;
+  font-size: 2em;
+  padding-left: 25%;
+  padding-bottom: 30px;
+}
+.mail img {
+  width: 30px;
+  height: 30px;
+}
+
+button{
+  background-color: red;
+  color: white;
+  width: 200px;
+  height: 50px;
+  float:left;
+  margin-left: 50px;
+  font-size: 16px;
+}
+
+.regular-menu{
+  clear: both;
+  padding: 10px;
+}
+
+.regular-menu li{
+  list-style: none;
+  padding: 10px;
+}
+
+.regular-menu .clicked{
+  list-style: none;
+  clear: both;
+  padding: 10px, 10px, 10px, 5px;
+  font-weight: bold;
+  border-left: 5px solid red;
+  background-color: lightgrey;
+  color: red;
+}
