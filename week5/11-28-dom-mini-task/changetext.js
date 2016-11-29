@@ -28,12 +28,12 @@ function clickedIt(){
 changeCss.addEventListener('click', clickedIt);
 
 
-//highlight clicked names
-var clickName = document.querySelector('.on');
+// highlight clicked names
+var theClass = document.querySelector('.barbie-dolls');
 
-function clicking(){
-  console.log ('working?');
-  clickName.classList.toggle('off');
-}
+theClass.addEventListener('click', function(evt) {
+  console.log('clicked', evt.target, evt.target.tagName);
+  if (evt.target.tagName === 'LI') {
+    evt.target.classList.toggle('off');}
 
-clickName.addEventListener('click', clicking);
+});
