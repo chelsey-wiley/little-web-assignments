@@ -5,14 +5,13 @@ body{
 .menu {
   max-width: 300px;
   float:left;
-  outline: 1px solid black
 }
 
 .logo img{
+  background-color: lightgrey;
   max-width: 200px;
   height: 100px;
   float: left;
-  background-color: lightgrey;
   padding-right: 100px;
 }
 
@@ -49,7 +48,7 @@ button{
   padding: 10px;
 }
 
-.regular-menu .clicked{
+.clicked {
   list-style: none;
   clear: both;
   padding: 10px, 10px, 10px, 5px;
