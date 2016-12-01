@@ -59,27 +59,31 @@ table {
 }
 
 #triangle{
+	border: none;
+	height:15px;
 	width: 30px;
-	position: relative;
-	border:none;
-	margin: none;
-	padding: none;
-
+	position: relative;;
+	margin:0;
+	float:right;
+	right: 20px;
+	top: -4px;
 }
+
 .octocat img{
 width: 90%;
 border: 1px solid grey;
 border-radius: 5px;
 margin: 0 5%;
+position: relative;
 
 }
 
 .image-footer{
 	width: 90%;
-  background-color: lightblue;
 	overflow: auto;
 	margin: 0 5%;
 	padding-top: 15px;
+	background-color: lightblue;
 }
 
 .image-number{
