@@ -55,17 +55,16 @@ table {
 .octocat{
   width: 33.33333%;
 	float: left;
-  outline: 1px dashed black;
 }
 
 #triangle{
 	border: none;
-	height:15px;
-	width: 30px;
+	height:10px;
+	width: 25px;
 	position: relative;;
 	margin:0;
 	float:right;
-	right: 20px;
+	right: 30px;
 	top: -4px;
 }
 
@@ -82,8 +81,8 @@ position: relative;
 	width: 90%;
 	overflow: auto;
 	margin: 0 5%;
-	padding-top: 15px;
-	background-color: lightblue;
+	padding-top: 25px;
+	border-bottom: 1px solid grey;
 }
 
 .image-number{
@@ -92,14 +91,22 @@ color: grey;
 
 }
 .image-caption{
-	color: orange;
+	color: grey;
 	float:right;
-	outline: 1px solid red;
 	font-weight: bold;
 }
 
+.image-caption a:hover{
+	color: grey;
+}
+.image-caption a:link{
+	color:black;
+	text-decoration: none;
+}
+.image-caption a:visited{
+	color: black;
+}
 .authors {
-  outline: 1px dashed green;
 	padding-left: 10px;
 	float: right;
 	position: relative;
