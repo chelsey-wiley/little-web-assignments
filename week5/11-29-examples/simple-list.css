@@ -1,1 +1,9 @@
+.the-list{
+  border: 1px solid grey;
+}
 
+.list-b {
+  background-color: lightgrey;
+  font-weight: bold;
+  border-right: grey;
+}

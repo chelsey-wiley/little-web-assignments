@@ -1,0 +1,16 @@
+h1{
+  color:green;
+}
+.run{
+  background-image: url('runner-sprite.png');
+  margin: 20px;
+  height: 100px;
+}
+
+.pos-1{
+background-position: 300px 300px;
+border: 1px solid black;
+}
+.pos-2{
+
+}

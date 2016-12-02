@@ -65,8 +65,7 @@ h1{
   overflow: hidden;
 }
 
-.read-this:hover{
-  transition-timing-function: ease-in;
+.show-this{
   background-color: green;
   height:200px;
 }

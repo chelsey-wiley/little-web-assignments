@@ -1,0 +1,62 @@
+p{
+  color: red;
+}
+.like-button{
+  background-image: url('facebook.jpg');
+  background-position: -53px -127px;
+  /*border: 1px solid black;*/
+  height: 18px;
+  width: 17px;
+  margin: 10px;
+}
+
+.white-logo{
+  background-image: url('facebook.jpg');
+  background-position: 0px -91px;
+  /*border: 1px solid black;*/
+  height: 35px;
+  width: 168px;
+  margin: 10px;
+}
+
+.david-walsh{
+    background-image: url('david-walsh.jpg');
+    /*border: 1px solid black;*/
+    height: 150px;
+    width: 191.5px;
+    margin: 10px;
+}
+
+.david-walsh:hover{
+  background-position: -191px 0px;
+}
+
+.monster {
+  background-image: url('monster.png');
+  height: 120px;
+  width: 119px;
+  margin: 10px;
+}
+
+
+/*up left*/
+.pos-1{
+  background-position: 0px 0px;
+}
+/*up center*/
+.pos-2{
+  background-position: -119px 0px;
+}
+/*up down*/
+.pos-3{
+  background-position: -237px 0px;
+}
+
+.hide {
+  display: none;
+}
+
+.superman {
+  display: inline;
+  color: red;
+}
