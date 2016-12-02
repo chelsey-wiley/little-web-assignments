@@ -59,9 +59,8 @@ h1{
 }
 
 .read-this{
-  height: 16px;
+  height: 20px;
   transition-duration: 2s;
-  background-color: blue;
   overflow: hidden;
 }
 
