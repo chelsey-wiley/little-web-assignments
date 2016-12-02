@@ -7,20 +7,28 @@ setInterval(function() {
 
   switch (position) {
     case 1:
-      //console.log('position 1');
-      monster.classList.remove('pos-2');
+      //Going forward
       monster.classList.add('pos-1');
+
+      //Going back
+      monster.classList.remove('pos-2');
       break;
+
     case 2:
-      //console.log('position 2');
+      //Going forward
       monster.classList.remove('pos-1');
-      monster.classList.remove('pos-3');
       monster.classList.add('pos-2');
+      //Going back
+      monster.classList.remove('pos-3');
       break;
+
     case 3:
-      //console.log('position 3');
+      //Going forward
       monster.classList.remove('pos-2');
       monster.classList.add('pos-3');
+
+      //Going back
+      //last one I don't remove anything
       break;
   }
 

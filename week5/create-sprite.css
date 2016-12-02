@@ -4,13 +4,34 @@ h1{
 .run{
   background-image: url('runner-sprite.png');
   margin: 20px;
-  height: 100px;
+  height: 155px;
+  width: 116px;
+  background-repeat: no-repeat;
+  width:
 }
 
 .pos-1{
-background-position: 300px 300px;
-border: 1px solid black;
+background-position: -20px -10px;
 }
-.pos-2{
 
+
+.pos-2{
+  background-position: -136px -10px;
+  width: 90px;
 }
+
+.pos-3{
+  background-position: -228px -12px;
+  width: 125px;
+}
+
+.pos-4{
+  background-position: -370px -12px;
+  width: 125px;
+  }
+
+  .pos-5{
+    background-position: -500px -9px;
+    width: 106px;
+    height: 165px;
+    }

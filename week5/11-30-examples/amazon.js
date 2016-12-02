@@ -8,8 +8,7 @@ clickMe.addEventListener('click', function() {
 //This grabs the HTML dom element with class name of read this
 
   readThis.classList.toggle('show-this')
-
+  
 });
 
 //class list = mangager of dom element classes
-// 
