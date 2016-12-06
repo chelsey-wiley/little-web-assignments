@@ -1,0 +1,28 @@
+label {
+  display: block;
+  padding: 20px;
+  font-weight: bold;
+  font-family: sans-serif;
+}
+
+textarea {
+  display: block;
+  padding: 20px;
+}
+
+div {
+  border: 3px solid orange;
+  margin: 5px;
+}
+
+.where {
+  display:none;
+}
+
+.what {
+  display:none;
+}
+
+.on {
+  display: block;
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Multi-Step Form</title>
+    <link href="multi-step-form.css" rel="stylesheet">
+  </head>
+  <body>
+
+
+    <div class="who">
+      <label for="first-name">First name:
+        <input type="text" name="first-name">
+      </label>
+      <label for="last-name">Last name:
+        <input name="last-name">
+      </label>
+      <button class="next-where">Continue</button>
+    </div>
+
+    <div class="where">
+      <label>Dallas<input type="radio" value="Dallas" name="city"></label>
+      <label>Fort Worth<input type="radio" value="Fort-Worth" name="city"></label>
+      <label>Mid-Cities<input type="radio" value="Mid-Cities" name="city"></label>
+    <button class="back">Back</button>
+    <button class="next-what">Continue</button>
+    </div>
+
+
+
+    <div class="what">
+      <label for="question">What do you like best about living there:
+        <textarea name="question"></textarea>
+      </label>
+    <button class="back">Back</button>
+    </div>
+
+  <script src="multi-step-form.js"></script>
+  </body>
+</html>
