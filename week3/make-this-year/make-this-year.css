@@ -60,7 +60,7 @@ header{
 .header-text{
   color: white;
   margin: 0 auto;
-  max-width: 45%;
+ 	max-width: 620px;
   margin-top: 3%;
   overflow: auto;
 
@@ -137,7 +137,7 @@ header{
 .instructors {
 	color: black;
 	margin: 0 auto;
-	max-width: 45%;
+	max-width: 620px;
 	margin-top: 5%;
 	overflow: auto;
 }
@@ -196,7 +196,7 @@ header{
 section{
 	color: black;
 	margin: 0 auto;
-	max-width: 45%;
+	max-width: 620px;
 	overflow: auto;
 }
 
@@ -233,7 +233,7 @@ section a:hover{
 .logo-box {
 	color:black;
 	margin: 0 auto;
-	max-width: 45%;
+	max-width: 620px;
 	margin-top: 3%;
 	overflow: hidden;
 }
@@ -344,7 +344,7 @@ section a:hover{
 	}
 	.header-text {
 		margin: 0 auto;
-		max-width: 100%;
+		max-width: 620px;
 	}
 	.instructors {
 		margin: 0 auto;
@@ -352,7 +352,7 @@ section a:hover{
 		float: none;
 	}
 	section {
-		max-width: 90%;
+		margin: 10px;
 	}
 }
 @media screen and (max-width: 400px) {
