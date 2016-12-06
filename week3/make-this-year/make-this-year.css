@@ -123,6 +123,7 @@ header{
 .search-box button{
 	font-family: 'Karla', sans-serif;
 	color: white;
+	padding: 1%;
   font-size: 1.2em;
   line-height: 3.5em;
   width: 30%;
@@ -295,7 +296,7 @@ section a:hover{
 
 .lower-search p{
 	color: rgba(176, 176, 176, 1.0);
-  font-size: 1.2em;
+  font-size: 1.3em;
   line-height: 3.2em;
   border-radius: 10px;
   background-color: rgba(230, 230, 230, 1.0);
@@ -337,7 +338,8 @@ section a:hover{
 		margin: 0px;
 	}
 	div{
-		margin: 0px;
+		margin-left: 10px;
+		margin-right: 10px;
 		text-align: center;
 	}
 	.header-text {
@@ -379,3 +381,7 @@ section a:hover{
 	margin: 0px;
 	float: none;
 	}
+
+.bottom-div {
+	max-width: 100%;
+}
