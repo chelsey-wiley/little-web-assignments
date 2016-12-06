@@ -6,3 +6,13 @@
 .toggle-it {
   display: none;
 }
+
+.barbie {
+  display:none;
+}
+.ken {
+  background-image: url("http://i4.mirror.co.uk/incoming/article7630057.ece/ALTERNATES/s615b/Ken-Doll.jpg");
+  height: 660px;
+  width: 620px;
+  object-fit: contain;
+}
