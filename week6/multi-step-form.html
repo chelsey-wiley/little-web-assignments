@@ -7,34 +7,34 @@
   </head>
   <body>
 
+    <div class = "container">
+      <div class="who on">
+        <label for="first-name">First name:
+          <input type="text" name="first-name">
+        </label>
+        <label for="last-name">Last name:
+          <input name="last-name">
+        </label>
+        <button class="next-where">Continue</button>
+      </div>
 
-    <div class="who">
-      <label for="first-name">First name:
-        <input type="text" name="first-name">
-      </label>
-      <label for="last-name">Last name:
-        <input name="last-name">
-      </label>
-      <button class="next-where">Continue</button>
+      <div class="where">
+        <label>Dallas<input type="radio" value="Dallas" name="city"></label>
+        <label>Fort Worth<input type="radio" value="Fort-Worth" name="city"></label>
+        <label>Mid-Cities<input type="radio" value="Mid-Cities" name="city"></label>
+      <button class="back">Back</button>
+      <button class="next-what">Continue</button>
+      </div>
+
+
+
+      <div class="what">
+        <label for="question">What do you like best about living there:
+          <textarea name="question"></textarea>
+        </label>
+      <button class="back">Back</button>
+      </div>
     </div>
-
-    <div class="where">
-      <label>Dallas<input type="radio" value="Dallas" name="city"></label>
-      <label>Fort Worth<input type="radio" value="Fort-Worth" name="city"></label>
-      <label>Mid-Cities<input type="radio" value="Mid-Cities" name="city"></label>
-    <button class="back">Back</button>
-    <button class="next-what">Continue</button>
-    </div>
-
-
-
-    <div class="what">
-      <label for="question">What do you like best about living there:
-        <textarea name="question"></textarea>
-      </label>
-    <button class="back">Back</button>
-    </div>
-
   <script src="multi-step-form.js"></script>
   </body>
 </html>
