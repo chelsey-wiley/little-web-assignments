@@ -1,0 +1,393 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+//variables stand for VALUES and can be used WITH a property
+
+$white: white;
+$grey: rgba(178, 178, 180, 1.0);
+$black: black;
+$dkGrey: rgba(78, 78, 78, 1.0);
+$ltGrey: rgba(230, 230, 230, 1.0);
+
+
+
+body {
+	font-family: 'Karla', sans-serif;
+}
+
+header{
+  	background: url(https://crew.co/make-this-year/images/pattern-dark.png);
+  height: 750px;
+  margin: 0 auto;
+  overflow: auto;
+}
+
+.header-text{
+  color: $white;
+  margin: 0 auto;
+ 	max-width: 620px;
+  margin-top: 3%;
+  overflow: auto;
+
+}
+.header-text h1{
+	font-family: 'Martel', serif;
+	color: $white;
+  font-size: 2.3em;
+}
+
+.header-text h2{
+	font-family: 'Raleway', sans-serif;
+	font-weight: bold;
+	text-transform: uppercase;
+	background: linear-gradient( rgba(174, 92, 200, 1.0),rgba(109, 140, 181, 1.0));
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+  font-size: 2.3em;
+	padding-top: 2%;
+
+}
+
+
+.intro-box {
+	font-weight: bold;
+  font-size: 2em;
+	line-height: 1.8em;
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+
+.dots{
+	color: rgba(174, 92, 200, 1.0);
+	background: url(https://crew.co/make-this-year/images/dot.png) repeat-x bottom left;
+}
+
+.dots p{
+	line-height: 1.7em;
+}
+
+.header-text p {
+  font-size: 1.5em;
+}
+
+.search-box {
+	padding-top: 5%;
+}
+.search-box p{
+	padding: 1%;
+	color: $grey;
+  font-size: 1.2em;
+  line-height: 3.5em;
+  border-radius: 10px;
+  background-color: $white;
+  width: 64%;
+  float:left;
+
+}
+
+.search-box button{
+	font-family: 'Karla', sans-serif;
+	color: $white;
+	padding: 1%;
+  font-size: 1.2em;
+  line-height: 3.5em;
+  width: 30%;
+  border-radius: 10px;
+  float:right;
+	background-color: rgba(174, 92, 200, 1.0);
+	border: none;
+
+}
+
+.instructors {
+	color: $black;
+	margin: 0 auto;
+	max-width: 620px;
+	margin-top: 5%;
+	overflow: auto;
+}
+
+.instructors h1 {
+  font-size: 1.5em;
+	margin-bottom: 5%;
+	font-weight: bold;
+
+}
+
+.photos {
+	overflow: auto;
+	max-width: 100%;
+	margin-bottom: 15%;
+	float: left;
+	overflow: hidden;
+}
+
+.photos img{
+	border-radius: 5px;
+	width: 100%;
+}
+
+.photos h2{
+	font-weight: bold;
+	font-size: 1.2em;
+	line-height: 1.2em;
+	padding-bottom: 5%;
+}
+.photos p{
+	color: $grey;
+}
+
+.photo-left{
+	float: left;
+	width: 31.33333%;
+
+}
+
+.photo-center{
+	float: left;
+	margin-left: 3%;
+	margin-right: 3%;
+	width: 31.33333%;
+
+}
+
+.photo-right{
+	width: 31.33333%;
+	float: left;
+
+}
+
+
+section{
+	color: $black;
+	margin: 0 auto;
+	max-width: 620px;
+	overflow: auto;
+}
+
+section h1{
+	font-size: 1.5em;
+	margin-bottom: 5%;
+	font-weight: bold;
+}
+
+section p{
+	padding-bottom: 3%;
+	font-size: 1.2em;
+	line-height: 1.5em;
+}
+
+section a:link {
+	color:$grey;
+
+}
+section a:visited{
+	color: $grey;
+}
+
+section a:hover{
+	color:$dkGrey;
+}
+
+.signature{
+	color: $grey;
+	font-size: 1em;
+	padding-top: 1%;
+}
+
+.logo-box {
+	color:$black;
+	margin: 0 auto;
+	max-width: 620px;
+	margin-top: 3%;
+	overflow: hidden;
+}
+
+
+.logo-box p {
+	font-size: 1.4em;;
+	line-height: 1.5em;
+}
+
+.logos {
+	overflow: auto;
+	margin-bottom: 5%;
+	overflow: hidden;
+}
+
+.logos img{
+	border-radius: 5px;
+	width: 70%;
+	padding: 20%;
+}
+
+.logos p{
+	color: $black;
+	clear: both;
+	padding-top: 7%;
+}
+
+.logos span {
+	font-weight: bold;
+}
+
+
+.photos h2{
+	font-size: 1.2em;
+	line-height: 1.2em;
+	padding-bottom: 5%;
+}
+
+.logo-left{
+	padding-top: 3%;
+	float: left;
+	width: 30.33333%;
+
+}
+
+.logo-center{
+	float: left;
+	margin-left: 3%;
+	margin-right: 3%;
+	width: 30.33333%;
+
+}
+
+.logo-right{
+	padding-top: 3%;
+	width: 30.33333%;
+	float: left;
+}
+
+.lower-search p{
+	color: $grey;
+  font-size: 1.3em;
+  line-height: 3.2em;
+  border-radius: 10px;
+  background-color: $ltGrey;
+  width: 60%;
+  float:left;
+}
+
+.lower-search button{
+	color: white;
+  font-size: 1.2em;
+  line-height: 3.2em;
+  width: 35%;
+  border-radius: 10px;
+  float:right;
+	border: none;
+	background-color: rgba(174, 92, 200, 1.0);
+}
+
+.foot{
+	color: $grey;
+	margin-top: 35%;
+	font-size: .7em;
+}
+
+.foot span{
+	font-family: 'Martel', serif;
+	font-size: 1.2em;
+	padding: 5px;
+}
+
+
+
+
+
+
+@media screen and (max-width: 700px) {
+  body {
+    max-width: 100%;
+		margin: 0px;
+	}
+	div{
+		margin-left: 10px;
+		margin-right: 10px;
+		text-align: center;
+	}
+	.header-text {
+		margin: 0 auto;
+		max-width: 620px;
+	}
+	.instructors {
+		margin: 0 auto;
+		max-width: 100%;
+		float: none;
+	}
+	section {
+		margin: 10px;
+	}
+}
+@media screen and (max-width: 400px) {
+
+
+.photo-left {
+	width: 90%;
+	margin: 0 auto;
+	float: none;
+}
+
+.photo-center {
+	width: 90%;
+	margin: 0 auto;
+	float: none;
+
+}
+.photo-right {
+	width: 90%;
+	margin: 0 auto;
+	float: none;
+}
+
+.logo-box {
+	max-width: 100%;
+	margin: 0px;
+	float: none;
+	}
+
+.bottom-div {
+	max-width: 100%;
+}
+}
