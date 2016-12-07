@@ -8,14 +8,14 @@
   <body>
 
     <div class = "container">
-      <div class="who on">
+      <div class="who showing">
         <label for="first-name">First name:
           <input type="text" name="first-name">
         </label>
         <label for="last-name">Last name:
           <input name="last-name">
         </label>
-        <button class="next-where">Continue</button>
+        <button class="next">Continue</button>
       </div>
 
       <div class="where">
@@ -23,18 +23,19 @@
         <label>Fort Worth<input type="radio" value="Fort-Worth" name="city"></label>
         <label>Mid-Cities<input type="radio" value="Mid-Cities" name="city"></label>
       <button class="back">Back</button>
-      <button class="next-what">Continue</button>
+      <button class="next">Continue</button>
       </div>
 
 
 
       <div class="what">
         <label for="question">What do you like best about living there:
-          <textarea name="question"></textarea>
+          <textarea name="response"></textarea>
         </label>
       <button class="back">Back</button>
       </div>
     </div>
+
   <script src="multi-step-form.js"></script>
   </body>
 </html>
