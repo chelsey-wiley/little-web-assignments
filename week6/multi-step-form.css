@@ -28,3 +28,7 @@ textarea {
 .container .showing {
   display: block;
 }
+
+.wrong {
+  border: 2px solid red;
+}

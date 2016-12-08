@@ -5,9 +5,21 @@ var next2 = document.querySelector('.where .next');
 var back2 = document.querySelector('.where .back');
 var back3 = document.querySelector('.what .back');
 
-next1.addEventListener('click', function(){
-  hideTheDiv();
-  show('.where');
+var firstNameInput = document.querySelector('.first-name');
+var lastNameInput = document.querySelector('.last-name');
+var radioInput = document.querySelector('.radio-selectors')
+var responseInput = document.querySelector('.response')
+
+
+
+next1.addEventListener('click', function(evt) {
+
+  var isValid = checkForValue(evt, firstNameInput);
+
+  if (isValid) {
+    hideTheDiv();
+    show('.where');
+  }
 });
 
 next2.addEventListener('click', function(){
@@ -36,27 +48,4 @@ function show(selector){
 }
 
 
-
-
-
-
-
-
-
-
-
-
-//
-// var nextWhere = document.querySelector('.next-where');
-//
-// nextWhere.addEventListener('click', function(){
-//   var show = document.querySelector('.where');
-//   show.classList.remove('on')
-// });
-//
-// var nextWhat = document.querySelector('.next-what');
-//
-// nextWhat.addEventListener('click', function(){
-//   var show = document.querySelector('.what');
-//   show.classList.remove('on')
-// });
+var localStorageValue = localStorage.getItem('.who')

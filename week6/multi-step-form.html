@@ -8,9 +8,11 @@
   <body>
 
     <div class = "container">
+
+
       <div class="who showing">
         <label for="first-name">First name:
-          <input type="text" name="first-name">
+          <input type="text" name="first-name" class="first-name">
         </label>
         <label for="last-name">Last name:
           <input name="last-name">
@@ -18,10 +20,13 @@
         <button class="next">Continue</button>
       </div>
 
+
       <div class="where">
-        <label>Dallas<input type="radio" value="Dallas" name="city"></label>
-        <label>Fort Worth<input type="radio" value="Fort-Worth" name="city"></label>
-        <label>Mid-Cities<input type="radio" value="Mid-Cities" name="city"></label>
+        <div class="radio-selectors">
+          <label>Dallas<input type="radio" value="Dallas" name="city"></label>
+          <label>Fort Worth<input type="radio" value="Fort-Worth" name="city"></label>
+          <label>Mid-Cities<input type="radio" value="Mid-Cities" name="city"></label>
+        </div>
       <button class="back">Back</button>
       <button class="next">Continue</button>
       </div>
@@ -30,12 +35,13 @@
 
       <div class="what">
         <label for="question">What do you like best about living there:
-          <textarea name="response"></textarea>
+          <textarea name="response" class="response"></textarea>
         </label>
       <button class="back">Back</button>
       </div>
     </div>
 
-  <script src="multi-step-form.js"></script>
-  </body>
+    <script src="multi-step-form-validation.js"></script>
+<script src="multi-step-form.js"></script>
+    </body>
 </html>
