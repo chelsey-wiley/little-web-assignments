@@ -56,3 +56,13 @@ table {
 .on {
 	background-color: orange;
 }
+
+.christmas {
+	background-color: green;
+	color: red;
+}
+
+.halloween {
+	background-color: black;
+	color: orange;
+}
