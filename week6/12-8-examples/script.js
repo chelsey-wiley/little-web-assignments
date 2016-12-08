@@ -6,11 +6,14 @@ var cold = document.querySelector ('.cold');
 
 
 clickItButton.addEventListener ('click', function(){
-  cold.textContent = "I wish it was warm!";
-  cold.classList.toggle('on');
+  changeIt()
 });
 
 clickThisButton.addEventListener ('click', function(){
+  changeIt()
+});
+
+function changeIt(){
   cold.textContent = "I wish it was warm!";
   cold.classList.toggle('on');
-});
+}
