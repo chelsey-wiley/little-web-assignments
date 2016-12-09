@@ -14,12 +14,15 @@ var responseInput = document.querySelector('.response')
 
 next1.addEventListener('click', function(evt) {
 
-  var isValid = checkForValue(evt, firstNameInput);
+  var firstIsOk = checkForValue(evt, firstNameInput);
+  var lasIsOk= checkForValue(evt, lastNameInput);
 
-  if (isValid) {
-    hideTheDiv();
-    show('.where');
-  }
+  // if (isOk) {
+  //   hideTheDiv();
+  //   show('.where');
+  // }
+
+  if ()
 });
 
 next2.addEventListener('click', function(){
