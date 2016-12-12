@@ -9,10 +9,6 @@ click.addEventListener('click', function(){
   var value = stuff.value;
 
 
-
-
-
-
 // 2 ------ var hasE = stringHasE(value);
 // alert(hasE);
 //
@@ -22,7 +18,7 @@ click.addEventListener('click', function(){
 // }
 //
 // });
-// 
+//
 // 1 -----  function stringHasE(str){
 //   var index = str.indexOf('e');
 //   if (index === -1){
