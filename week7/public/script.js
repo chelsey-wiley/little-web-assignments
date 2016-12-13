@@ -1,4 +1,4 @@
-(function() {
+   (function() {
   var theList= document.querySelector('.steak-info');
 
   var promise = $.ajax({
