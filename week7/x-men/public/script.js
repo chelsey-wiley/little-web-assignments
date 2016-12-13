@@ -59,13 +59,14 @@ mutantList.addEventListener('click', function(evt){
 
 
 var ul = document.createElement('ul');
+display.appendChild(ul);
 
  for (var i = 0; i < mutant.powers.length; i++){
     var powers = mutant.powers[i];
 
     var powersList = document.createElement('li');
     powersList.textContent = mutant.powers[i];
-    display.appendChild(powersList);
+    ul.appendChild(powersList);
   };
 
 
