@@ -51,12 +51,19 @@ mutantList.addEventListener('click', function(evt){
 
  var img =document.createElement('img');
  img.src = mutant.imageUrl;
- display.appendChild(img)
+ display.appendChild(img);
+
+ var h2description = document.createElement('h2');
+ h2description.textContent = 'description';
+ display.appendChild(h2description);
 
  var description = document.createElement('p');
  description.textContent = mutant.description;
  display.appendChild(description);
 
+ var h2powers = document.createElement('h2');
+ h2powers.textContent = 'powers';
+ display.appendChild(h2powers);
 
 var ul = document.createElement('ul');
 display.appendChild(ul);

@@ -48,24 +48,62 @@ table {
 }
 
 body {
-	max-width: 960px;
+	max-width: 980px;
 	margin: 0 auto;
+	background-image: url('background.jpg');
+	/*image from: http://more-sky.com/WDF-153290.html*/
+	text-align: right;
 }
 
+h1 {
+	font-size: 4em;
+	text-align: center;
+	margin: 20px;
+	padding: 20px;
+
+	font-family: 'Syncopate', sans-serif;
+	color: red;
+}
+h2 {
+	font-size: 2.5em;
+	color:white;
+	padding-bottom: 30px;
+	font-family: 'Syncopate', sans-serif;
+}
+
+p{
+	font-family: 'Roboto', sans-serif;
+	padding-bottom: 10px;
+	color: rgba(57, 57, 57, 1.0);
+}
 .mutant-list {
 	float:left;
-	width: 30%;
+	width: 20%;
+	margin-right: 5%;
+	font-family: 'Roboto', sans-serif;
+	color: white;
+	font-size: 1.5em;
 }
 
 .display{
-	float:left;
+	float:right;;
 	width: 70%;
 }
 
 .display img {
-	max-height: 150px;
+	height: 200px;
+	width: 200px;
+	margin-bottom: 20px;
+	border-radius: 30%;
+	border: 5px solid darkblue;
 }
 
 .selected {
-	background-color: green;
+	border: 2px solid red;
+}
+
+.display li {
+ margin-left: 30px;
+ font-family: 'Roboto', sans-serif;
+ color: rgba(57, 57, 57, 1.0);
 }
