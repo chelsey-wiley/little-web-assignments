@@ -22,25 +22,7 @@
     }
 
     theList.innerHTML = html;
-    // console.log('characters', kind);
-    //
-    // var li = document.createElement('li');
-    // li.textContent = kind.name;
-    //
-    //
-    // theList.appendChild(li);
-    //
-    // var raceP = document.createElement('p');
-    // raceP.textContent = kind.race;
-    //
-    // raceP.classList.add ('raceP');
-    // li.appendChild(raceP);
-    //
-    //
-    // var descriptionP = document.createElement('p');
-    // descriptionP.textContent = kind.description;
-    //
-    // li.appendChild(descriptionP);
+
 
 });
 
