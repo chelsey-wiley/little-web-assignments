@@ -11,6 +11,7 @@ promise.done(function(data){ // done function is a specific to jQuery (common on
   console.log('done!', data); //this console.log fires after the promise resolves. Promises are a pattern for handling async programming. The promise is configured to do things when it's done. Not specific to jQuery. Promises will work with other libraries
 
   var classNameH1= document.querySelector('.class-name')//get the dom elements
+  
   var cohortNameH2 = document.querySelector('.cohort-name');
 
   classNameH1.textContent = data.name; //from the data we passed in get the property called name with a string of 'Front-End Dev'.
