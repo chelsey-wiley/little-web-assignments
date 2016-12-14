@@ -34,8 +34,6 @@ console.log(templateHtml);
 
 mutantList.addEventListener('click', function(evt){
   console.log(evt.target);
-  var attr = evt.target.getAttribute('data-index');
-  console.log(attr);
 
   var currentlySelected = document.querySelector('.selected');
   if (currentlySelected != null){
@@ -55,7 +53,7 @@ mutantList.addEventListener('click', function(evt){
   display.innerHTML = output;
 
 
-  });
+});
 
 
 
