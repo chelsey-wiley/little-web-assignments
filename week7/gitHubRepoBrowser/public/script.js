@@ -10,11 +10,22 @@ function requestData(){
 
   promise.done(function(data){
     console.log(data);
+      var searchInfo = document.querySelector('.search-info');
+      var templateScript = document.querySelector('.results-template');
+      var templateHtml=templateScript.innerHTML;
 
-    // for (var i = 0; i < data.length; i++) {
-    //   var search = [i];
-    //   console.log(apiResult);
-    // }
+      var html =''
+
+      for (var i = 0; i < data.items.length; i++) {
+        var info = data.items[i];
+
+        var output = Mustache.render(templateHtml, info);
+        console.log(output);
+        html += output
+      }
+
+      searchInfo.innerHTML= html;
+
   })
 };
 

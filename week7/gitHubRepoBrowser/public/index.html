@@ -14,14 +14,17 @@
     <input name="search" class="search-text">
     </label>
 
+    <ul class="search-info">
+    </ul>
 
 
     <script type="text/html" class="results-template">
       <li>
-        <div class="user-name">{{___}}</div>
-        <ol>{{#ingredients.malt}}
-          <li class="malt-name">{{name}}</li>
-        </ol>{{/ingredients.malt}}
+        <div class="person-name"><a href="{{html_url}}">{{name}}</a></div>
+
+        <div class="repo-name"><a href ="{{owner.html_url}}">by:{{owner.login}}</a></div>
+
+
       </li>
     </script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
