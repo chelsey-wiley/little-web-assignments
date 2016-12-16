@@ -16,7 +16,14 @@
 
 
 
-
+    <script type="text/html" class="results-template">
+      <li>
+        <div class="user-name">{{___}}</div>
+        <ol>{{#ingredients.malt}}
+          <li class="malt-name">{{name}}</li>
+        </ol>{{/ingredients.malt}}
+      </li>
+    </script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src ="mustache.js"></script>
     <script src="script.js"></script>

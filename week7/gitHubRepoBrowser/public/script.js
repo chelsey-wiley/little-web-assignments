@@ -1,11 +1,11 @@
 console.log('script file hooked up!');
 
 var resList=document.querySelector('#res-list');
-
+var wordInput = document.querySelector('.search-text');
 
 function requestData(){
   var promise = $.ajax({
-    url: 'https://api.github.com/search/repositories?q=barbie'
+    url: 'https://api.github.com/search/repositories?q=' + wordInput.value
   });
 
   promise.done(function(data){
@@ -17,23 +17,23 @@ function requestData(){
     // }
   })
 };
-requestData();
 
-var wordInput = document.querySelector('.search-text');
 wordInput.addEventListener('keyup',function(evt){
   // console.log(evt.keyCode);
   if(evt.keyCode===13){
     console.log('you hit enter');
 
-  $.ajax({
-  url:'https://api.github.com/search/repositories?q=',
-  method:'POST',
-  data: { word: wordInput.value }
-  })
+    requestData()
 
-  .done(function(){
-    console.log('the POST is done')
-    getTheData();
-  });
+  // $.ajax({
+  // url:'https://api.github.com/search/repositories?q=',
+  // method:'POST',
+  // data: { word: wordInput.value }
+  // })
+  //
+  // .done(function(){
+  //   console.log('the POST is done')
+  //   getTheData();
+  // });
 }
 });
