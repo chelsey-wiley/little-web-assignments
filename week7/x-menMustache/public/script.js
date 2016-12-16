@@ -53,7 +53,8 @@ mutantList.addEventListener('click', function(evt){
   display.innerHTML = output;
 
 
-});
+}
+);
 
 
 

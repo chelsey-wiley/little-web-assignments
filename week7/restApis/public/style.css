@@ -46,18 +46,3 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-
-
-.beer-name {
-	font-size: 2em;
-	color:red;
-}
-
-.malt-name{
-	font-size: 1em;
-	color:green;
-}
-
-.hidden {
-	display: none;
-}

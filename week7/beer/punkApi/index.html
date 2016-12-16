@@ -10,6 +10,8 @@
 
   <body>
     <h1>Beer- PunkApi</h1>
+    <button class="previous-button">Previous</button>
+    <button class="next-button">Next</button>
       <ul class="beer-info">
 
       </ul>
@@ -17,7 +19,8 @@
 
 
     <script type="text/html" class="beer-template">
-      <li class="beer-name">{{name}}
+      <li>
+        <div class="beer-name">{{name}}</div>
         <ol>{{#ingredients.malt}}
           <li class="malt-name">{{name}}</li>
         </ol>{{/ingredients.malt}}

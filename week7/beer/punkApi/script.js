@@ -1,8 +1,28 @@
 console.log('script file hooked up!');
+var nextButton = document.querySelector('.next-button');
+nextButton.addEventListener('click', function(){
+  page +=1;
+  requestData();
+});
+
+var previousButton = document.querySelector('.previous-button');
+previousButton.addEventListener('click', function(){
+
+  page -=1
+
+    if (page === 1){
+      previousButton.classList.add('hidden');
+    };
+
+  requestData();
+});
 
 
+var page = 1;
+
+function requestData() {
 var promise = $.ajax({
-  url:'https://punkapi.com/api/v1/beers',
+  url:'https://punkapi.com/api/v1/beers?page=' + page,
   headers: {
     "Authorization": "Basic " + btoa('3216d3f36d5b41138acae8d9085a6c6d:')
     //send information about your request like user-agent. Tells the server this is what I am. I'm using Chrome v...
@@ -30,3 +50,6 @@ promise.done(function(data){
   }
   beerInfo.innerHTML= html;
 });
+}
+
+requestData();
