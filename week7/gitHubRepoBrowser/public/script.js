@@ -2,6 +2,30 @@ console.log('script file hooked up!');
 
 var resList=document.querySelector('#res-list');
 var wordInput = document.querySelector('.search-text');
+var nextButton = document.querySelector('.next');
+var backButton = document.querySelector('.back');
+var currentPage = document.querySelector('.current-page');
+var page = 0;
+
+nextButton.addEventListener('click', function(){
+  page +=1;
+  localStorage.setItem('the-page-is', page);
+  requestData();
+  currentPage.innerHTML = page;
+  console.log ('next clicked')
+});
+
+
+backButton.addEventListener('click', function(){
+  page -=1;
+  localStorage.setItem('the-page-is', page);
+  requestData();
+  currentPage.innerHTML = page;
+  console.log('back clicked')
+});
+
+
+
 
 function requestData(){
   var promise = $.ajax({
@@ -9,7 +33,7 @@ function requestData(){
   });
 
   promise.done(function(data){
-    console.log(data);
+    // console.log(data);
       var searchInfo = document.querySelector('.search-info');
       var templateScript = document.querySelector('.results-template');
       var templateHtml=templateScript.innerHTML;
@@ -20,7 +44,7 @@ function requestData(){
         var info = data.items[i];
 
         var output = Mustache.render(templateHtml, info);
-        console.log(output);
+        // console.log(output);
         html += output
       }
 
