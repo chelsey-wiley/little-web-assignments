@@ -6,26 +6,29 @@
     <meta charset="utf-8">
     <title>GitHub Repo</title>
     <link href="style.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Poppins|Source+Sans+Pro" rel="stylesheet">
   </head>
 
   <body>
-    <h1>GitHub Repo</h1>
-    <label for="searching">Search:
-    <input name="search" class="search-text">
-    </label>
+      <div class="container">
+        <h1>GitHub Repo</h1>
+        <input name="search" class="search-text">
+      </div>
 
-    <ul class="search-info">
-    </ul>
+      <div class="results">
+        <ul class="search-info">
+        </ul>
+      </div>
 
 
     <script type="text/html" class="results-template">
-      <li>
-        <div class="person-name"><a href="{{html_url}}">{{name}}</a></div>
 
-        <div class="repo-name"><a href ="{{owner.html_url}}">by:{{owner.login}}</a></div>
+        <li class="the-lis">
+          <div class="repo-name"><a href="{{html_url}}">{{name}}</a></div>
 
+          <div class="person-name"><a href ="{{owner.html_url}}">by:{{owner.login}}</a></div>
+        </li>
 
-      </li>
     </script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src ="mustache.js"></script>

@@ -45,5 +45,31 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+body {
+  margin: 0 auto;
+  max-width: 920px;
+  text-align: center; }
+
 h1 {
+  font-family: "Poppins", sans-serif;
   color: green; }
+
+.container {
+  text-align: center; }
+
+.results {
+  margin: 20px 320px; }
+
+.person-name {
+  font-family: "Source Sans Pro", sans-serif;
+  text-align: left; }
+
+.repo-name {
+  font-family: "Poppins", sans-serif;
+  text-align: left; }
+
+.the-lis {
+  line-height: 1.2em;
+  padding: 5px;
+  margin: 10px;
+  border: 2px dashed grey; }

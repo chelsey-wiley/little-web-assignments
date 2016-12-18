@@ -1,5 +1,36 @@
 @import "reset";
 
+$headerfont: 'Poppins', sans-serif;
+$mainfont: 'Source Sans Pro', sans-serif;
+
+body {
+  margin: 0 auto;
+  max-width: 920px;
+  text-align: center;
+}
 h1 {
+  font-family: $headerfont;
   color: green;
+}
+
+.container{
+  text-align: center;
+}
+
+.results{
+  margin: 20px 320px;
+}
+.person-name{
+  font-family: $mainfont;
+  text-align: left;
+}
+.repo-name{
+  font-family: $headerfont;
+  text-align: left;
+}
+.the-lis{
+  line-height: 1.2em;
+  padding: 5px;
+  margin: 10px;
+  border: 2px dashed grey;
 }
