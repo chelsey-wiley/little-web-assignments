@@ -15,14 +15,15 @@ var responseInput = document.querySelector('.response')
 next1.addEventListener('click', function(evt) {
 
   var firstIsOk = checkForValue(evt, firstNameInput);
-  var lasIsOk= checkForValue(evt, lastNameInput);
+  var lastIsOk= checkForValue(evt, lastNameInput);
+  var radioClicked = checkForValue(evt,radioInput);
 
-  // if (isOk) {
-  //   hideTheDiv();
-  //   show('.where');
-  // }
+  console.log('click')
+  if (firstIsOk && lastIsOk) {
+    hideTheDiv();
+    show('.where');
+  }
 
-  if ()
 });
 
 next2.addEventListener('click', function(){
