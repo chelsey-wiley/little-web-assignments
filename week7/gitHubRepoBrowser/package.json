@@ -1,0 +1,17 @@
+{
+  "name": "githubrepobrowswer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "babel-cli": "^6.18.0",
+    "babel-preset-env": "^1.1.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "build": "babel client -d public --watch --source-maps",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
