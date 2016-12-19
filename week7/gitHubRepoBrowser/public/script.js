@@ -5,7 +5,7 @@ var wordInput = document.querySelector('.search-text');
 var nextButton = document.querySelector('.next');
 var backButton = document.querySelector('.back');
 var currentPage = document.querySelector('.current-page');
-var page = 0;
+var page = 1;
 
 nextButton.addEventListener('click', function(){
   page +=1;
