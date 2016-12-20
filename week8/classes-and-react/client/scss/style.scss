@@ -1,5 +1,13 @@
 @import "reset";
 
+body {
+  font-size: 2em;
+}
 h1 {
   color: green;
+}
+
+.on {
+  background-color: purple;
+  color: white;
 }
