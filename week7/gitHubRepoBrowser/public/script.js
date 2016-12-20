@@ -60,15 +60,5 @@ wordInput.addEventListener('keyup',function(evt){
 
     requestData()
 
-  // $.ajax({
-  // url:'https://api.github.com/search/repositories?q=',
-  // method:'POST',
-  // data: { word: wordInput.value }
-  // })
-  //
-  // .done(function(){
-  //   console.log('the POST is done')
-  //   getTheData();
-  // });
 }
 });
