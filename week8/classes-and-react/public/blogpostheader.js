@@ -23,18 +23,17 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
     _createClass(BlogPostHeader, [{
       key: 'render',
       value: function render() {
+
+        console.log('props', this.props.title);
+
         return React.createElement(
           'header',
           null,
-          React.createElement(
-            'p',
-            null,
-            '19 December 2016 12pm America/New_York'
-          ),
+          React.createElement('p', { className: 'post-date' }),
           React.createElement(
             'h1',
             null,
-            'TO SAVE REAL NEWS'
+            this.props.title
           )
         );
       }

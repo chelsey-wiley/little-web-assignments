@@ -3,11 +3,18 @@
 
 
   class BlogPostHeader extends React.Component{
+
     render(){
+
+
+
+      console.log('props', this.props.title);
+
       return <header>
-          <p>19 December 2016 12pm America/New_York</p>
-          <h1>TO SAVE REAL NEWS</h1>
-        </header>
+            <p className="post-date"></p>
+            <h1>{this.props.title}</h1>
+          </header>
+
     }
   }
 

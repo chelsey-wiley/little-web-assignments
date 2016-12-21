@@ -10,12 +10,17 @@
   class BlogPostBody extends React.Component{
       render(){
       return <div className="post-body">
-          <img src="http://www.zeldman.com/wp-content/themes/zeldman/images/default.svg" />
+          <img src={this.props.imgSrc}/>
           <p>First Paragraph</p>
           <p>Second Paragraph</p>
       </div>
     }
   }
+
+
+
+
+
 
   class BlogPostRelated extends React.Component{
     render (){
@@ -56,9 +61,15 @@
 
   class BlogPost extends React.Component {
     render(){
+
+
+      var dateInformation = '19 December 2016 12pm America/New_York'
+      var title ='TO SAVE REAL NEWS!'
+      var imgSrc=
+
       return <div className ="blog-post">
-      <BlogPostHeader />
-      <BlogPostBody />
+      <BlogPostHeader title={title}/>
+      <BlogPostBody imgSrc={imgageSrc}/>
       <BlogPostRelated />
 
 

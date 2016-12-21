@@ -149,10 +149,14 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
     _createClass(BlogPost, [{
       key: 'render',
       value: function render() {
+
+        var dateInformation = '19 December 2016 12pm America/New_York';
+        var title = 'TO SAVE REAL NEWS!';
+
         return React.createElement(
           'div',
           { className: 'blog-post' },
-          React.createElement(BlogPostHeader, null),
+          React.createElement(BlogPostHeader, { title: 'TO SAVE REAL NEWS' }),
           React.createElement(BlogPostBody, null),
           React.createElement(BlogPostRelated, null)
         ); //className = 'blog-post'
