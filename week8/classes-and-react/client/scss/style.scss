@@ -1,4 +1,5 @@
 @import "reset";
+@import "clientReact";
 
 body {
   font-size: 2em;
@@ -10,4 +11,13 @@ h1 {
 .on {
   background-color: purple;
   color: white;
+}
+
+.message-switch {
+  color: red;
+}
+
+p{
+  color: darkblue;
+  font-family: sans-serif;
 }

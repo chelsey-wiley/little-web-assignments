@@ -1,0 +1,1 @@
+{"version":3,"sources":["../client/js/first-react.js"],"names":["console","log"],"mappings":";;AAAC,aAAW;AACV;;AAEAA,UAAQC,GAAR,CAAY,aAAZ;AAED,CALA,GAAD","file":"first-react.js","sourcesContent":["(function() {\n  'use strict';\n\n  console.log(\"hello react\")\n\n}());\n"]}
