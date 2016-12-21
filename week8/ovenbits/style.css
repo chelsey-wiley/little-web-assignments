@@ -52,6 +52,9 @@ table {
 .color:hover {
   background-color: rgba(0, 0, 0, 0.6); }
 
+.text:hover {
+  overflow: auto; }
+
 h2 {
   font-size: 4em;
   padding-top: 130px; }
@@ -102,8 +105,5 @@ p {
 .img3 .button {
   margin-top: 50px;
   outline: 1px solid orange; }
-
-.button {
-  display: none; }
 
 /*# sourceMappingURL=style.css.map */
