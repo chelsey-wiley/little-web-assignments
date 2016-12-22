@@ -8,7 +8,7 @@
 
 h2{
   font-size: 4em;
-  padding-top: 130px;
+  padding-top: 160px;
 }
 
 p{
@@ -23,20 +23,18 @@ line-height: 1.5em;
   font-family: $standardFont;
   color: rgba(255, 255, 255, 0.8);
   text-align: center;
-  outline: 1px solid green;
   height: 320px;
-  // overflow: hidden;
 }
 .color{
     background-color: rgba(0, 0, 0, 0.4);
-    height: 400px;
+    height: 450px;
 }
 .photos{
   float: left;
   width: 32.63%;
   background-size: cover;
   background-repeat: no-repeat;
-  height: 400px;
+  height: 450px;
 }
 
 .img1{
@@ -48,11 +46,7 @@ line-height: 1.5em;
 .img2{
   background-image: $phonepic;
   border: $borderInfo
-}
 
-.img2 .button{
-  margin-top: 50px;
-  outline: 1px solid orange;
 }
 
 .img3{
@@ -60,13 +54,7 @@ line-height: 1.5em;
   border-top: $borderInfo;
   border-bottom: $borderInfo;
 }
-.img3 .button{
-  margin-top: 50px;
-  outline: 1px solid orange;
-}
 
-//how to hover over nonexsistnt thing
-.button{
-
-
+.button {
+  opacity: 0;
 }

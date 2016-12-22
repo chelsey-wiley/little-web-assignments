@@ -1,10 +1,7 @@
- .button:hover{
-   display: inline-block;;
-}
 .color:hover{
   background-color: rgba(0, 0, 0, 0.6);
 }
 
-.text:hover{
-  overflow: auto;
+.button:hover{
+  opacity: 100;
 }

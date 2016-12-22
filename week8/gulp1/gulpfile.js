@@ -28,10 +28,10 @@ gulp.task('start', function () {
 });
 
 gulp.task('babel', function(){
-    return gulp.src('./client/js/script.js')
+    return gulp.src('./client/js/**/*.js')
       .pipe(sourcemaps.init())
       .pipe(babel({
-          presets: ['es2015']
+          presets: ['es2015', 'react']
       }))
       .pipe(sourcemaps.write('.'))
       .pipe(gulp.dest('public'));
