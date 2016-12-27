@@ -26,8 +26,9 @@ var AnotherComponent = function (_React$Component) {
     value: function render() {
       return React.createElement(
         'div',
-        null,
-        'This is a thing.'
+        { className: 'tada' },
+        'Hello, ',
+        this.props.name
       );
     }
   }]);
@@ -48,6 +49,7 @@ var HelloMessage = function (_React$Component2) {
     key: 'render',
     value: function render() {
       var name = 'Joe';
+
       return React.createElement(
         'div',
         null,
@@ -58,7 +60,7 @@ var HelloMessage = function (_React$Component2) {
           name,
           '!'
         ),
-        React.createElement(AnotherComponent, null)
+        React.createElement(AnotherComponent, { name: name })
       );
     }
   }]);

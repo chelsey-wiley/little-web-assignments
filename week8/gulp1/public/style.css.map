@@ -1,1 +1,1 @@
-{"version":3,"file":"style.css","sources":["style.scss"],"sourcesContent":["p {\n  color:green;\n}\n"],"names":[],"mappings":"AAAA,AAAA,CAAC,CAAC;EACA,KAAK,EAAC,KAAK,GACZ"}
+{"version":3,"file":"style.css","sources":["style.scss"],"sourcesContent":["p {\n  color:green;\n}\n\n.tada {\n  font-size: 3em;\n  color: orange;\n}\n"],"names":[],"mappings":"AAAA,AAAA,CAAC,CAAC;EACA,KAAK,EAAC,KAAK,GACZ;;AAED,AAAA,KAAK,CAAC;EACJ,SAAS,EAAE,GAAG;EACd,KAAK,EAAE,MAAM,GACd"}
