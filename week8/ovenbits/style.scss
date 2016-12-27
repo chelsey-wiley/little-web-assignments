@@ -9,6 +9,10 @@
 h2{
   font-size: 4em;
   padding-top: 160px;
+  transition-property: padding-top;
+	transition-delay: initial;
+	transition-duration: 100ms;
+	transition-timing-function: ease-out;
 }
 
 p{
@@ -58,7 +62,7 @@ line-height: 1.5em;
 
 .study {
   opacity: 0;
-  padding: 15px;
+  padding: 10px;
   border: 1px white solid;
   color: white;
   width: 50%;
