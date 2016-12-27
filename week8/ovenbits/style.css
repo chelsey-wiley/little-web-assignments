@@ -52,6 +52,9 @@ table {
 .color:hover .study {
   opacity: 1; }
 
+.color:hover h2 {
+  padding-top: 100px; }
+
 h2 {
   font-size: 4em;
   padding-top: 160px; }
@@ -66,8 +69,7 @@ p {
 .text {
   font-family: "Josefin Sans", sans-serif;
   color: rgba(255, 255, 255, 0.8);
-  text-align: center;
-  height: 320px; }
+  text-align: center; }
 
 .color {
   background-color: rgba(0, 0, 0, 0.4);
@@ -102,4 +104,4 @@ p {
   width: 50%;
   margin: 0 auto;
   margin-top: 10px;
-  border-radius: 2px; }
+  border-radius: 3px; }

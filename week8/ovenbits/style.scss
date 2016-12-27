@@ -23,13 +23,13 @@ line-height: 1.5em;
   font-family: $standardFont;
   color: rgba(255, 255, 255, 0.8);
   text-align: center;
-  height: 320px;
 }
+
 .color{
   background-color: rgba(0, 0, 0, 0.4);
   height: 450px;
-
 }
+
 .photos{
   float: left;
   width: 32.63%;
@@ -64,5 +64,5 @@ line-height: 1.5em;
   width: 50%;
   margin: 0 auto;
   margin-top: 10px;
-	border-radius: 2px;
+	border-radius: 3px;
 }
