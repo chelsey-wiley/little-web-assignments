@@ -49,8 +49,8 @@ table {
 .color:hover {
   background-color: rgba(0, 0, 0, 0.6); }
 
-.button:hover {
-  opacity: 100; }
+.color:hover .study {
+  opacity: 1; }
 
 h2 {
   font-size: 4em;
@@ -94,5 +94,12 @@ p {
   border-top: 15px solid red;
   border-bottom: 15px solid red; }
 
-.button {
-  opacity: 0; }
+.study {
+  opacity: 0;
+  padding: 15px;
+  border: 1px white solid;
+  color: white;
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 10px;
+  border-radius: 2px; }

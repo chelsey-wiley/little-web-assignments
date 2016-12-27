@@ -26,8 +26,9 @@ line-height: 1.5em;
   height: 320px;
 }
 .color{
-    background-color: rgba(0, 0, 0, 0.4);
-    height: 450px;
+  background-color: rgba(0, 0, 0, 0.4);
+  height: 450px;
+
 }
 .photos{
   float: left;
@@ -55,6 +56,13 @@ line-height: 1.5em;
   border-bottom: $borderInfo;
 }
 
-.button {
+.study {
   opacity: 0;
+  padding: 15px;
+  border: 1px white solid;
+  color: white;
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 10px;
+	border-radius: 2px;
 }
