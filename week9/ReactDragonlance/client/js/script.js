@@ -29,7 +29,7 @@ class AppComponent extends React.Component {
     return <div className="data-component">
     <button onClick={() => this.theData()}>Load Data</button>
       <ul>
-        {this.state.apiResult.characters.map((char, index) => {return <li key={index}>{char.name}
+        {this.state.apiResult.characters.map((char, index) => {return <li key={index}><div className="name">{char.name}</div>
         <div className="description">{char.description}</div>
         <div className="race">{char.race}</div></li>; })}
       </ul>

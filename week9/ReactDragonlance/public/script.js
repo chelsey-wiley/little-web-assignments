@@ -64,7 +64,11 @@ var AppComponent = function (_React$Component) {
             return React.createElement(
               'li',
               { key: index },
-              char.name,
+              React.createElement(
+                'div',
+                { className: 'name' },
+                char.name
+              ),
               React.createElement(
                 'div',
                 { className: 'description' },
