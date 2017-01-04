@@ -52,7 +52,8 @@ body {
 
 h1 {
   font-family: "Poppins", sans-serif;
-  color: green; }
+  color: blue;
+  margin: 20px; }
 
 .container {
   text-align: center; }
@@ -73,3 +74,25 @@ h1 {
   padding: 5px;
   margin: 10px;
   border: 2px dashed grey; }
+
+.gone {
+  display: none; }
+
+.paging {
+  overflow: auto;
+  width: 150px;
+  text-align: center;
+  margin: 0 auto;
+  padding: 20px; }
+
+.back {
+  float: left;
+  width: 30%; }
+
+.current-page {
+  width: 30%;
+  display: inline-block; }
+
+.next {
+  float: right;
+  width: 30%; }

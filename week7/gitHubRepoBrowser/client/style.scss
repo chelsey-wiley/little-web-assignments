@@ -6,31 +6,54 @@ $mainfont: 'Source Sans Pro', sans-serif;
 body {
   margin: 0 auto;
   max-width: 920px;
-  text-align: center;
-}
+  text-align: center; }
+
 h1 {
-  font-family: $headerfont;
-  color: green;
+  font-family: "Poppins", sans-serif;
+  color: blue;
+  margin: 20px;
 }
 
-.container{
-  text-align: center;
-}
+.container {
+  text-align: center; }
 
-.results{
-  margin: 20px 320px;
-}
-.person-name{
-  font-family: $mainfont;
-  text-align: left;
-}
-.repo-name{
-  font-family: $headerfont;
-  text-align: left;
-}
-.the-lis{
+.results {
+  margin: 20px 320px; }
+
+.person-name {
+  font-family: "Source Sans Pro", sans-serif;
+  text-align: left; }
+
+.repo-name {
+  font-family: "Poppins", sans-serif;
+  text-align: left; }
+
+.the-lis {
   line-height: 1.2em;
   padding: 5px;
   margin: 10px;
-  border: 2px dashed grey;
+  border: 2px dashed grey; }
+
+.gone {
+  display: none;
+}
+
+.paging {
+  overflow: auto;
+  width: 150px;
+  text-align: center;
+  margin: 0 auto;
+  padding: 20px;
+}
+.back{
+  float:left;
+  width: 30%
+}
+.current-page{
+  width: 30%;
+  display: inline-block;
+}
+.next{
+  float: right;
+  width: 30%
 }

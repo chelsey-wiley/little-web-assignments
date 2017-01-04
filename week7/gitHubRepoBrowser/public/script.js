@@ -55,6 +55,7 @@ function requestData(){
 
       searchInfo.innerHTML= html;
       totalCount = data.total_count;
+      currentPage.innerHTML = page;
 
   })
 };
@@ -62,20 +63,26 @@ function requestData(){
 nextButton.addEventListener('click', function(){
   if (page < totalCount / 30){
     page +=1;
-    localStorage.setItem('the-page-is', page);
+    // localStorage.setItem('the-page-is', page);
     requestData();
-    currentPage.innerHTML = page;
+    // currentPage.innerHTML = page;
     console.log ('next clicked')
+    backButton.classList.remove("gone");
   }
 });
 
 
 backButton.addEventListener('click', function(){
   page -=1;
-  localStorage.setItem('the-page-is', page);
+  // localStorage.setItem('the-page-is', page);
   requestData();
-  currentPage.innerHTML = page;
+  // currentPage.innerHTML = page;
   console.log('back clicked')
+  if (page = 1) {
+    console.log('the page is', page)
+      backButton.classList.add("gone");
+  }
+
 });
 
 wordInput.addEventListener('keyup',function(evt){
