@@ -7,27 +7,6 @@ var backButton = document.querySelector('.back');
 var currentPage = document.querySelector('.current-page');
 var page = 1;
 var pageResults = 10;
-// var totalResults = data.total_count;
-//if `totalResults` is hoisted to the top "data is not defined" if totalResults is defined within the function then data never gets passed through. can't get total results until an api is called.
-
-// nextButton.addEventListener('click', function(){
-//   if (page < data.total_count / 20){
-//     page +=1;
-//     localStorage.setItem('the-page-is', page);
-//     requestData();
-//     currentPage.innerHTML = page;
-//     console.log ('next clicked')
-//   }
-// });
-//
-//
-// backButton.addEventListener('click', function(){
-//   page -=1;
-//   localStorage.setItem('the-page-is', page);
-//   requestData();
-//   currentPage.innerHTML = page;
-//   console.log('back clicked')
-// });
 
 
 function requestData(){
@@ -63,10 +42,8 @@ function requestData(){
 nextButton.addEventListener('click', function(){
   if (page < totalCount / 30){
     page +=1;
-    // localStorage.setItem('the-page-is', page);
     requestData();
-    // currentPage.innerHTML = page;
-    console.log ('next clicked')
+    //console.log ('next clicked')
     backButton.classList.remove("gone");
   }
 });
@@ -74,12 +51,10 @@ nextButton.addEventListener('click', function(){
 
 backButton.addEventListener('click', function(){
   page -=1;
-  // localStorage.setItem('the-page-is', page);
   requestData();
-  // currentPage.innerHTML = page;
-  console.log('back clicked')
+  //console.log('back clicked')
   if (page = 1) {
-    console.log('the page is', page)
+    //console.log('the page is', page)
       backButton.classList.add("gone");
   }
 
