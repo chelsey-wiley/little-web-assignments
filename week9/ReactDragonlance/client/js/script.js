@@ -6,7 +6,7 @@ class AppComponent extends React.Component {
     super();
     this.state ={
       apiResult:{
-        results:[]
+        characters:[]
       }
     }
     console.log('getting the info');
@@ -27,10 +27,13 @@ class AppComponent extends React.Component {
 
   render() {
     return <div className="data-component">
-
-    <h2>Data goes Here</h2>
     <button onClick={() => this.theData()}>Load Data</button>
-    <dataComponent/>
+      <ul>
+        {this.state.apiResult.characters.map((char, index) => {return <li key={index}>{char.name}
+        <div className="description">{char.description}</div>
+        <div className="race">{char.race}</div></li>; })}
+      </ul>
+
 
     </div>;
   }

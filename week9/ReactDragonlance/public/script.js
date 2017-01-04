@@ -20,7 +20,7 @@ var AppComponent = function (_React$Component) {
 
     _this.state = {
       apiResult: {
-        results: []
+        characters: []
       }
     };
     console.log('getting the info');
@@ -51,18 +51,33 @@ var AppComponent = function (_React$Component) {
         'div',
         { className: 'data-component' },
         React.createElement(
-          'h2',
-          null,
-          'Data goes Here'
-        ),
-        React.createElement(
           'button',
           { onClick: function onClick() {
               return _this3.theData();
             } },
           'Load Data'
         ),
-        React.createElement('dataComponent', null)
+        React.createElement(
+          'ul',
+          null,
+          this.state.apiResult.characters.map(function (char, index) {
+            return React.createElement(
+              'li',
+              { key: index },
+              char.name,
+              React.createElement(
+                'div',
+                { className: 'description' },
+                char.description
+              ),
+              React.createElement(
+                'div',
+                { className: 'race' },
+                char.race
+              )
+            );
+          })
+        )
       );
     }
   }]);
