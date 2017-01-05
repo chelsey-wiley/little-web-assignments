@@ -10,3 +10,32 @@ p {
     padding: 5px;
   }
 }
+
+// .off{
+//   outline: 1px solid green;
+//   height: 16px;
+//   overflow: hidden;
+// }
+//
+// .on{
+//   height: auto;
+//   overflow: auto;
+// }
+
+li{
+  outline: 1px solid green;
+   height: 16px;
+   overflow: hidden;
+}
+
+li:hover{
+  height: auto;
+  overflow: auto;
+}
+.listy{
+  color:blue;
+}
+
+.name {
+color: orange;
+}

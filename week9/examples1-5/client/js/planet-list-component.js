@@ -6,14 +6,38 @@ window.SW = window.SW || {}; //on the window.name = on the window.name or blank 
 //Everytime you add a new file must manually restart gulp
 //outside the iife means the PlanetListComponent is in the global scope inside the iife it is not. Must create namespace.
 
+class ListItemComponent extends React.Component{
+  constructor(){
+    super();
+
+  }
+}
+
   class PlanetListComponent extends React.Component{
     constructor(){
       super();
-        // this.state={
-        //   apiResult:{
-        //     results:[]
-        //   }
-        // };
+
+      this.state={
+        currentClass: "off"
+      };
+        this.state={
+          apiResult:{
+            results:[]
+          }
+        };
+      }
+
+      toggle(){
+        if(this.state.currentClass ==="on"){
+          this.setState({
+            currentClass: "off"
+          });
+        }
+        else{
+          this.setState({
+            currentClass: "on"
+          });
+        }
       }
 
       componentDidMount(){
@@ -37,7 +61,11 @@ window.SW = window.SW || {}; //on the window.name = on the window.name or blank 
 
       if (this.state !== null) {
         theList =  <ul>
-            {this.state.apiResult.results.map((planet, index)=> {return<li key={index}>{planet.name}</li>})}
+            {this.state.apiResult.results.map((planet, index)=> {return <li
+               key={index}><div className="name">{planet.name}</div>
+                <div className="rotation">{planet.rotation_period}</div>
+                <div className="gravity">{planet.gravity}</div>
+            </li>})}
           </ul>
       }
 
@@ -47,7 +75,9 @@ window.SW = window.SW || {}; //on the window.name = on the window.name or blank 
         {/*<button onClick={()=> this.theData()}> Load it!</button>
         Removed button because componentDidMount loads the data on page load*/}
 
-        {theList}
+        <div className={this.state.currentClass} onClick={() => {this.toggle();}}> {theList} </div>
+
+         {/*//puts the variable theList (which is a ul and an li) into the page*/}
 
       </div>
       )

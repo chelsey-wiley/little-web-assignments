@@ -1,4 +1,4 @@
-'use strict';
+"use strict";
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
@@ -16,68 +16,122 @@ window.SW = window.SW || {}; //on the window.name = on the window.name or blank 
   //Everytime you add a new file must manually restart gulp
   //outside the iife means the PlanetListComponent is in the global scope inside the iife it is not. Must create namespace.
 
-  var PlanetListComponent = function (_React$Component) {
-    _inherits(PlanetListComponent, _React$Component);
+  var ListItemComponent = function (_React$Component) {
+    _inherits(ListItemComponent, _React$Component);
+
+    function ListItemComponent() {
+      _classCallCheck(this, ListItemComponent);
+
+      return _possibleConstructorReturn(this, (ListItemComponent.__proto__ || Object.getPrototypeOf(ListItemComponent)).call(this));
+    }
+
+    return ListItemComponent;
+  }(React.Component);
+
+  var PlanetListComponent = function (_React$Component2) {
+    _inherits(PlanetListComponent, _React$Component2);
 
     function PlanetListComponent() {
       _classCallCheck(this, PlanetListComponent);
 
-      return _possibleConstructorReturn(this, (PlanetListComponent.__proto__ || Object.getPrototypeOf(PlanetListComponent)).call(this));
-      // this.state={
-      //   apiResult:{
-      //     results:[]
-      //   }
-      // };
+      var _this2 = _possibleConstructorReturn(this, (PlanetListComponent.__proto__ || Object.getPrototypeOf(PlanetListComponent)).call(this));
+
+      _this2.state = {
+        currentClass: "off"
+      };
+      _this2.state = {
+        apiResult: {
+          results: []
+        }
+      };
+      return _this2;
     }
 
     _createClass(PlanetListComponent, [{
-      key: 'componentDidMount',
+      key: "toggle",
+      value: function toggle() {
+        if (this.state.currentClass === "on") {
+          this.setState({
+            currentClass: "off"
+          });
+        } else {
+          this.setState({
+            currentClass: "on"
+          });
+        }
+      }
+    }, {
+      key: "componentDidMount",
       value: function componentDidMount() {
         this.theData();
       }
     }, {
-      key: 'theData',
+      key: "theData",
       value: function theData() {
-        var _this2 = this;
+        var _this3 = this;
 
         $.ajax({
           url: 'http://swapi.co/api/planets/'
         }).done(function (data) {
           console.log('the data', data);
-          _this2.setState({
+          _this3.setState({
             apiResult: data
           });
         });
       }
     }, {
-      key: 'render',
+      key: "render",
       value: function render() {
+        var _this4 = this;
 
         var theList; //set a variable then call the variable conditional to the if statement
 
         if (this.state !== null) {
           theList = React.createElement(
-            'ul',
+            "ul",
             null,
             this.state.apiResult.results.map(function (planet, index) {
               return React.createElement(
-                'li',
-                { key: index },
-                planet.name
+                "li",
+                {
+                  key: index },
+                React.createElement(
+                  "div",
+                  { className: "name" },
+                  planet.name
+                ),
+                React.createElement(
+                  "div",
+                  { className: "rotation" },
+                  planet.rotation_period
+                ),
+                React.createElement(
+                  "div",
+                  { className: "gravity" },
+                  planet.gravity
+                )
               );
             })
           );
         }
 
         return React.createElement(
-          'div',
-          { className: 'planet-list' },
+          "div",
+          { className: "planet-list" },
           React.createElement(
-            'h1',
+            "h1",
             null,
-            'Planet List'
+            "Planet List"
           ),
-          theList
+          React.createElement(
+            "div",
+            { className: this.state.currentClass, onClick: function onClick() {
+                _this4.toggle();
+              } },
+            " ",
+            theList,
+            " "
+          )
         );
       }
     }]);
