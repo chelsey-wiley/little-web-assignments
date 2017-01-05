@@ -31,6 +31,11 @@ window.SW = window.SW || {}; //on the window.name = on the window.name or blank 
     }
 
     _createClass(PlanetListComponent, [{
+      key: 'componentDidMount',
+      value: function componentDidMount() {
+        this.theData();
+      }
+    }, {
       key: 'theData',
       value: function theData() {
         var _this2 = this;
@@ -47,7 +52,6 @@ window.SW = window.SW || {}; //on the window.name = on the window.name or blank 
     }, {
       key: 'render',
       value: function render() {
-        var _this3 = this;
 
         var theList; //set a variable then call the variable conditional to the if statement
 
@@ -73,13 +77,6 @@ window.SW = window.SW || {}; //on the window.name = on the window.name or blank 
             null,
             'Planet List'
           ),
-          React.createElement(
-            'button',
-            { onClick: function onClick() {
-                return _this3.theData();
-              } },
-            ' Load it!'
-          ),
           theList
         );
       }
@@ -89,7 +86,7 @@ window.SW = window.SW || {}; //on the window.name = on the window.name or blank 
   }(React.Component);
 
   SW.PlanetListComponent = PlanetListComponent; //Keep these the same the property will make more sense.
-  //type SW in console in browswer to see the object with the PlanetListComponent init. 
+  //type SW in console in browswer to see the object with the PlanetListComponent init.
 
 })();
 //# sourceMappingURL=planet-list-component.js.map

@@ -16,6 +16,10 @@ window.SW = window.SW || {}; //on the window.name = on the window.name or blank 
         // };
       }
 
+      componentDidMount(){
+        this.theData();
+      }
+
       theData(){
         $.ajax({
           url:'http://swapi.co/api/planets/'
@@ -39,7 +43,9 @@ window.SW = window.SW || {}; //on the window.name = on the window.name or blank 
 
       return(<div className ="planet-list">
         <h1>Planet List</h1>
-        <button onClick={()=> this.theData()}> Load it!</button>
+
+        {/*<button onClick={()=> this.theData()}> Load it!</button>
+        Removed button because componentDidMount loads the data on page load*/}
 
         {theList}
 
@@ -49,7 +55,7 @@ window.SW = window.SW || {}; //on the window.name = on the window.name or blank 
   }
 
   SW.PlanetListComponent = PlanetListComponent; //Keep these the same the property will make more sense.
-  //type SW in console in browswer to see the object with the PlanetListComponent init. 
+  //type SW in console in browswer to see the object with the PlanetListComponent init.
 
 
 

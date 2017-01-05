@@ -7,7 +7,7 @@
 //remove PlanetListComponent
 
   class AppComponent extends React.Component {
-
+    
     render() {
       return <div>
         <window.SW.PlanetListComponent/>
