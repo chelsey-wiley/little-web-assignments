@@ -10,77 +10,81 @@ class ListItemComponent extends React.Component{
   constructor(){
     super();
 
+    this.state={
+      currentClass: "off"
+    };
+
   }
-}
 
-  class PlanetListComponent extends React.Component{
-    constructor(){
-      super();
-
-      this.state={
-        currentClass: "off"
-      };
-        this.state={
-          apiResult:{
-            results:[]
-          }
-        };
-      }
-
-      toggle(){
-        if(this.state.currentClass ==="on"){
-          this.setState({
-            currentClass: "off"
-          });
-        }
-        else{
-          this.setState({
-            currentClass: "on"
-          });
-        }
-      }
-
-      componentDidMount(){
-        this.theData();
-      }
-
-      theData(){
-        $.ajax({
-          url:'http://swapi.co/api/planets/'
-        })
-        .done((data) => {
-          console.log('the data', data);
-          this.setState({
-            apiResult:data
-          });
+    toggle(){
+      if(this.state.currentClass === "on"){
+        this.setState({
+          currentClass: "off"
         });
       }
+      else{
+        this.setState({
+          currentClass: "on"
+        });
+      }
+    }
+    render (){
+
+      return <li className={this.state.currentClass} onClick={()=> {this.toggle();}}>
+      <div className="name">{this.props.planet.name}</div>
+      <div className="rotation">{this.props.planet.rotation_period}</div>
+      <div className="gravity">{this.props.planet.gravity}</div>
+      </li>
+    }
+  }
+
+
+
+
+
+  class PlanetListComponent extends React.Component {
+    constructor(){
+      super();
+    }
+
+    componentDidMount(){
+      this.theData();
+    }
+
+    theData(){
+      $.ajax({
+        url:'http://swapi.co/api/planets/'
+      })
+      .done((data) => {
+        console.log('the data', data);
+        this.setState({
+          apiResult:data
+        });
+      });
+    }
+
     render(){
 
       var theList; //set a variable then call the variable conditional to the if statement
 
       if (this.state !== null) {
-        theList =  <ul>
-            {this.state.apiResult.results.map((planet, index)=> {return <li
-               key={index}><div className="name">{planet.name}</div>
-                <div className="rotation">{planet.rotation_period}</div>
-                <div className="gravity">{planet.gravity}</div>
-            </li>})}
+        theList = <ul>
+        {this.state.apiResult.results.map((planet) => {return <ListItemComponent key={planet.url} planet={planet} />})}
           </ul>
       }
 
-      return(<div className ="planet-list">
+      return <div className ="planet-list">
         <h1>Planet List</h1>
 
         {/*<button onClick={()=> this.theData()}> Load it!</button>
         Removed button because componentDidMount loads the data on page load*/}
 
-        <div className={this.state.currentClass} onClick={() => {this.toggle();}}> {theList} </div>
+        {theList}
 
          {/*//puts the variable theList (which is a ul and an li) into the page*/}
 
       </div>
-      )
+
     }
   }
 

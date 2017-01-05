@@ -52,14 +52,19 @@ p {
   border: 2px solid black;
   padding: 5px; }
 
-li {
+.off {
   outline: 1px solid green;
   height: 16px;
   overflow: hidden; }
 
-li:hover {
+.on {
   height: auto;
   overflow: auto; }
+
+li {
+  outline: 1px solid green;
+  height: 16px;
+  overflow: hidden; }
 
 .listy {
   color: blue; }

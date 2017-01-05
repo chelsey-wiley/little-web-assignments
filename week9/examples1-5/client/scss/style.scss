@@ -11,16 +11,16 @@ p {
   }
 }
 
-// .off{
-//   outline: 1px solid green;
-//   height: 16px;
-//   overflow: hidden;
-// }
-//
-// .on{
-//   height: auto;
-//   overflow: auto;
-// }
+.off{
+  outline: 1px solid green;
+  height: 16px;
+  overflow: hidden;
+}
+
+.on{
+  height: auto;
+  overflow: auto;
+}
 
 li{
   outline: 1px solid green;
@@ -28,10 +28,10 @@ li{
    overflow: hidden;
 }
 
-li:hover{
-  height: auto;
-  overflow: auto;
-}
+// li:hover{
+//   height: auto;
+//   overflow: auto;
+// }
 .listy{
   color:blue;
 }

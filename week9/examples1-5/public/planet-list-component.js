@@ -22,32 +22,16 @@ window.SW = window.SW || {}; //on the window.name = on the window.name or blank 
     function ListItemComponent() {
       _classCallCheck(this, ListItemComponent);
 
-      return _possibleConstructorReturn(this, (ListItemComponent.__proto__ || Object.getPrototypeOf(ListItemComponent)).call(this));
-    }
+      var _this = _possibleConstructorReturn(this, (ListItemComponent.__proto__ || Object.getPrototypeOf(ListItemComponent)).call(this));
 
-    return ListItemComponent;
-  }(React.Component);
-
-  var PlanetListComponent = function (_React$Component2) {
-    _inherits(PlanetListComponent, _React$Component2);
-
-    function PlanetListComponent() {
-      _classCallCheck(this, PlanetListComponent);
-
-      var _this2 = _possibleConstructorReturn(this, (PlanetListComponent.__proto__ || Object.getPrototypeOf(PlanetListComponent)).call(this));
-
-      _this2.state = {
+      _this.state = {
         currentClass: "off"
       };
-      _this2.state = {
-        apiResult: {
-          results: []
-        }
-      };
-      return _this2;
+
+      return _this;
     }
 
-    _createClass(PlanetListComponent, [{
+    _createClass(ListItemComponent, [{
       key: "toggle",
       value: function toggle() {
         if (this.state.currentClass === "on") {
@@ -61,6 +45,47 @@ window.SW = window.SW || {}; //on the window.name = on the window.name or blank 
         }
       }
     }, {
+      key: "render",
+      value: function render() {
+        var _this2 = this;
+
+        return React.createElement(
+          "li",
+          { className: this.state.currentClass, onClick: function onClick() {
+              _this2.toggle();
+            } },
+          React.createElement(
+            "div",
+            { className: "name" },
+            this.props.planet.name
+          ),
+          React.createElement(
+            "div",
+            { className: "rotation" },
+            this.props.planet.rotation_period
+          ),
+          React.createElement(
+            "div",
+            { className: "gravity" },
+            this.props.planet.gravity
+          )
+        );
+      }
+    }]);
+
+    return ListItemComponent;
+  }(React.Component);
+
+  var PlanetListComponent = function (_React$Component2) {
+    _inherits(PlanetListComponent, _React$Component2);
+
+    function PlanetListComponent() {
+      _classCallCheck(this, PlanetListComponent);
+
+      return _possibleConstructorReturn(this, (PlanetListComponent.__proto__ || Object.getPrototypeOf(PlanetListComponent)).call(this));
+    }
+
+    _createClass(PlanetListComponent, [{
       key: "componentDidMount",
       value: function componentDidMount() {
         this.theData();
@@ -68,13 +93,13 @@ window.SW = window.SW || {}; //on the window.name = on the window.name or blank 
     }, {
       key: "theData",
       value: function theData() {
-        var _this3 = this;
+        var _this4 = this;
 
         $.ajax({
           url: 'http://swapi.co/api/planets/'
         }).done(function (data) {
           console.log('the data', data);
-          _this3.setState({
+          _this4.setState({
             apiResult: data
           });
         });
@@ -82,7 +107,6 @@ window.SW = window.SW || {}; //on the window.name = on the window.name or blank 
     }, {
       key: "render",
       value: function render() {
-        var _this4 = this;
 
         var theList; //set a variable then call the variable conditional to the if statement
 
@@ -90,27 +114,8 @@ window.SW = window.SW || {}; //on the window.name = on the window.name or blank 
           theList = React.createElement(
             "ul",
             null,
-            this.state.apiResult.results.map(function (planet, index) {
-              return React.createElement(
-                "li",
-                {
-                  key: index },
-                React.createElement(
-                  "div",
-                  { className: "name" },
-                  planet.name
-                ),
-                React.createElement(
-                  "div",
-                  { className: "rotation" },
-                  planet.rotation_period
-                ),
-                React.createElement(
-                  "div",
-                  { className: "gravity" },
-                  planet.gravity
-                )
-              );
+            this.state.apiResult.results.map(function (planet) {
+              return React.createElement(ListItemComponent, { key: planet.url, planet: planet });
             })
           );
         }
@@ -123,15 +128,7 @@ window.SW = window.SW || {}; //on the window.name = on the window.name or blank 
             null,
             "Planet List"
           ),
-          React.createElement(
-            "div",
-            { className: this.state.currentClass, onClick: function onClick() {
-                _this4.toggle();
-              } },
-            " ",
-            theList,
-            " "
-          )
+          theList
         );
       }
     }]);
