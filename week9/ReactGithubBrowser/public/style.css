@@ -45,7 +45,18 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-p {
-  color: red; }
+.theList {
+  border: 1px solid green;
+  font-family: sans-serif;
+  padding: 10px;
+  margin: 20px; }
+
+.name {
+  font-size: 2em;
+  padding-bottom: 5px; }
+
+.url {
+  font-size: 1.5em;
+  padding-left: 40px; }
 
 /*# sourceMappingURL=style.css.map */
