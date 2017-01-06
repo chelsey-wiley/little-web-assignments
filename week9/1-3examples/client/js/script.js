@@ -1,4 +1,4 @@
-(function() {
+ (function() {
   'use strict';
 
 var mountNode = document.querySelector('#react-root');
@@ -39,6 +39,20 @@ class PersonComponent extends React.Component{
     )
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
