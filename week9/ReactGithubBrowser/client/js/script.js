@@ -41,6 +41,7 @@ class AppComponent extends React.Component {
   }
 
   render() {
+    var comma ="'"
     return <div className="data-component">
       <input placeholder ="search" onKeyUp={(evt) => {this.keyUp(evt); }} ref={(theDomElement) => {this.theInput = theDomElement;}}/>
       <button onClick={() => {this.clicky(); }}>enter</button>
@@ -48,7 +49,7 @@ class AppComponent extends React.Component {
     <ul className="results">
       {this.state.apiResult.items.map((info) => {return <li className="theList" key={info.id}>
         <div className="name">{info.login}</div>
-        <div className="url">{info.url}</div>
+        <div className="url"> <a target="_blank" href={info.html_url}>{info.login}{comma}s GitHub page</a></div>
       </li>; })}
     </ul>
 

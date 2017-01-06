@@ -67,6 +67,7 @@ var AppComponent = function (_React$Component) {
     value: function render() {
       var _this3 = this;
 
+      var comma = "'";
       return React.createElement(
         'div',
         { className: 'data-component' },
@@ -97,7 +98,14 @@ var AppComponent = function (_React$Component) {
               React.createElement(
                 'div',
                 { className: 'url' },
-                info.url
+                ' ',
+                React.createElement(
+                  'a',
+                  { target: '_blank', href: info.html_url },
+                  info.login,
+                  comma,
+                  's GitHub page'
+                )
               )
             );
           })
