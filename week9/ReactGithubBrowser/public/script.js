@@ -37,8 +37,9 @@ var AppComponent = function (_React$Component) {
   _createClass(AppComponent, [{
     key: 'clicky',
     value: function clicky() {
-      console.log('the input', this.theInput, this.theInput.value);
-      this.theData(this.theInput.value);
+      var page = 1;
+      console.log('the input is', this.theInput, this.theInput.value, 'the page is', page);
+      this.theData(this.theInput.value) + "&page" + page;
     }
   }, {
     key: 'keyUp',
@@ -82,6 +83,25 @@ var AppComponent = function (_React$Component) {
               _this3.clicky();
             } },
           'enter'
+        ),
+        React.createElement(
+          'div',
+          { className: 'paging' },
+          React.createElement(
+            'button',
+            { className: 'back', onClick: function onClick() {
+                _this3.clicky();
+              } },
+            'Back'
+          ),
+          React.createElement('div', { className: 'current-page' }),
+          React.createElement(
+            'button',
+            { className: 'next', onClick: function onClick() {
+                _this3.clicky();
+              } },
+            'Next'
+          )
         ),
         React.createElement(
           'ul',

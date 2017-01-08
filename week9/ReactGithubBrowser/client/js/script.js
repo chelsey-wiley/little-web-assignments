@@ -17,8 +17,10 @@ class AppComponent extends React.Component {
 }
 
   clicky(){
-    console.log('the input', this.theInput, this.theInput.value);
-    this.theData(this.theInput.value);
+    var page = 1;
+    console.log('the input is', this.theInput, this.theInput.value, 'the page is', page);
+    this.theData(this.theInput.value) + "&page" + page;
+
   }
 
   keyUp(evt) {
@@ -41,10 +43,16 @@ class AppComponent extends React.Component {
   }
 
   render() {
-    var comma ="'"
+    var comma ="'";
     return <div className="data-component">
       <input placeholder ="search" onKeyUp={(evt) => {this.keyUp(evt); }} ref={(theDomElement) => {this.theInput = theDomElement;}}/>
       <button onClick={() => {this.clicky(); }}>enter</button>
+      <div className="paging">
+      <button className="back" onClick={() => {this.clicky(); }}>Back</button>
+      <div className="current-page"></div>
+      <button className="next" onClick={() => {this.clicky(); }}>Next</button>
+    </div>
+
 
     <ul className="results">
       {this.state.apiResult.items.map((info) => {return <li className="theList" key={info.id}>
