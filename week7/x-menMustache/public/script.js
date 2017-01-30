@@ -55,38 +55,3 @@ mutantList.addEventListener('click', function(evt){
 
 }
 );
-
-
-
-//  display.innerHTML = '';
-//
-//  var h2 = document.createElement('h2');
-//  h2.textContent = mutant.realName;
-//  display.appendChild(h2);
-//
-//  var img =document.createElement('img');
-//  img.src = mutant.imageUrl;
-//  display.appendChild(img);
-//
-//  var h2description = document.createElement('h2');
-//  h2description.textContent = 'description';
-//  display.appendChild(h2description);
-//
-//  var description = document.createElement('p');
-//  description.textContent = mutant.description;
-//  display.appendChild(description);
-//
-//  var h2powers = document.createElement('h2');
-//  h2powers.textContent = 'powers';
-//  display.appendChild(h2powers);
-//
-// var ul = document.createElement('ul');
-// display.appendChild(ul);
-//
-//  for (var i = 0; i < mutant.powers.length; i++){
-//     var powers = mutant.powers[i];
-//
-//     var powersList = document.createElement('li');
-//     powersList.textContent = mutant.powers[i];
-//     ul.appendChild(powersList);
-//   };
