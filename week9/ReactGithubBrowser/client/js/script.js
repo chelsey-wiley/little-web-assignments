@@ -30,10 +30,11 @@ class AppComponent extends React.Component {
    }
  }
 
+ https://api.github.com/search/users?q=
+
   theData(){
     $.ajax({
-      url:"https://api.github.com/search/users?q=" + this.theInput.value
-    })
+      url:"https://api.github.com/search/users?q=" + this.theInput.value,
     .done((data)=> {
       console.log('got the data', data);
       this.setState({
